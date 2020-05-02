@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOCUMENTATION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid">
+        <header>
+            <nav id="navbar">
+                <header>HTML DOCUMENTACION</header>
+                <div class="menu"> <a href="#Html" class="nav-link">Html</a></div>
+                <div class="menu"><a href="#a" class="vav-link">a</a></div>
+                <div class="menu"><a href="#Article" class="nav-link">Article</a></div>
+                <div class="menu"><a href="#Button" class="nav-link">Button</a></div>
+                <div class="menu"><a href="#Div" class="nav-link">Div</a></div>
+                <div class="menu"><a href="#Form" class="nav-link">Form</a></div>
+                <div class="menu"><a href="#Header" class="nav-link">Header</a></div>
+            </nav>
+        </header>
+    
+        <main id="main-doc">
+            <section class="main-section"> 
+                <header id="Html">Html</header>
+                <article>
+                    <p>HTML (Hyper text Markup Language) es la construcción más básica de un sitio web.
+                        Definiendo el sentido y la estructura del contenido Web. Otras tecnologias ademas
+                        de HTML son generalmente usadas para describir la apariencia de una página web o su 
+                        funcionalidad. 
+                    </p>
+    
+                    <p>"HyperText" se refiere a los enlaces que conectan una página web con otra, dentro de la misma
+                        página o entre varias páginas web. Los enlaces son un aspecto fundamental de la Web. 
+                        Subiendo contenido al internet y enlazandolo a distintas páginas creadas por otras personas te convertiras
+                        en un participante activo en el mundo de la red mundial.
+                    </p>
+    
+                    <p>
+                        HTML usa marcas para mostrar texto, imagenes y otro tipo de contenido en el buscador Web. 
+                        Estas marcas incluyen elementos especiales que veremos más adelante. 
+                    </p>
+                </article>
+            </section>
+            <section class="main-section">
+            <header id="a" >a</header>
+               <article>
+                <p>
+                    El elemento "a" crea hipervinculos a otras páginas web, archivos, secciones de 
+                    la misma página web, direcciones de correo o cualquier otro URL.
+                </p>
+                <h3>Atributos</h3>
+                <h3>href</h3>
+                <p>Contiene un URL que apunta a un hipervinculo.</p>
+                <p>
+                    El nombre del fragmento del URL viene de la marca hash (#), la cual especifica
+                    una ubicación interna (un ID o un elemtento HTML).
+                </p>
+                <h3>hrefland</h3>
+                <p>
+                    Este atributo indica en lenguaje humano la funte enlazada, es puramente divisora,
+                    sin una funcionalidad constructora, aloja valores que son determinados por BCP47
+                </p>
+                <h3>referrerpolicy</h3>
+                    <p>
+                        Indica que referencia envia al buscardor:
+                    </p>
+                        <li><p><code>'no-referrer'</code> significa que <code>Referer:</code> no será enviado</p></li>
+                        <li><p><code>'no-referrer-when-downgrade'</code> significa que <code>Referef: </code>será enviado 
+                        el header cuando se navega
+                        sin un link de orgen,</p></li>
+                   <ul> 
+                    <li>
+                        <p><code>'origin'</code> significa que el 'referrer' será el origen de la 
+                        página, no incluye información antes del dominio.</p>
+                    </li>
+                    <li>
+                        <p><code>'strict-origin-when-cross-origin'</code></p>
+                    </li>
+                    <li>
+                        <p><code>'unsafe-url'</code> significa que el referrer será incluido en el origen y 
+                        el camino, pero no el fragmento, las contraseñas, o los usuarios. Esto es inseguro porque
+                        pueden extraer la información de URLs seguros a URLs inseguros.
+                        </p>
+                    </li>
+                </ul>
+               </article>
+            </section>
+            <section class="main-section" >
+                <header id="Article">Artcile</header>
+                    <article>
+                        <p>
+                            El elemento article representa una composición auto-contenida en un
+                            documento, páigna, aplicación o sitio que, puede ser reutilisable.
+                        </p>
+                        <h3>Notas de uso</h3>
+                        <ul>
+                            <li>
+                                <p>Cada <code>'article'</code>debe ser identificado, tipicamente 
+                                se incluyen etiquedas como <code>h1...h6</code> como hijo del elemento
+                                <code>'article'</code>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Cuando un un elemento tipo <code>'article'</code> esta anidado, el
+                                    elemento interno representa un elemento relacionado con otro elemento, 
+                                    el comentario de un post de un blog puede ser un <code>'article'</code>
+                                    anidado en otro <code>'article'</code> representando el post del blog.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    La publicación de un elemento tipo <code>'article'</code> puede ser descrita
+                                    usando el atributo <code>'datetime'</code> atributo del elemento <code>'time'</code>.  
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+            </section>
+            <section class="main-section">
+                <header id="Button">Button</header>
+                <article>
+                    <p>
+                        El botón representa un botón clickleable que puede ser usado en <code>'forms'</code> o en cualquier
+                        documento que necesite de una simple funcionalidad de un botón. Por defecto, los botones de HTML son 
+                        presentados en forma similar a la plataforma en la que se esta corriendo, esta apariencia puede ser cambiada
+                        usando CSS.
+                    </p>
+                    <h3>Atributos</h3>
+                    <p>Los atributos de este elemento incluyen atributos globales.</p>
+                    <ul>
+                        <li>
+                            <h3>Autofocus HTML5</h3>
+                            <p>Este atributo booleano permite especificar que el botón debe tener un input focus cuando la página es cargada
+                                amenos que el usuario no lo quiera así.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Disabled</h3>
+                            <p>
+                                El uso de este atributo indica que el usuario no puede interactuar con el botón. Si el atributo no lo especifica
+                                el bontón heredará las caracteristicas del elemento contenedor.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section">
+                <header id="Div">Div</header>
+                <article>
+                    <p>
+                        El contenedor divisorio <code>div</code> es un contenedor generico, no tiene un efecto en el diseño
+                        a menos que sea estilizado usando CSS.
+                    </p>
+                    <p>
+                        Como un "contenedor puro" el elemento <code>div</code> no representa nada, es utilizado para agrupar contenido
+                        que puede ser facilmente estilizado usando los atributos <code>class</code> o <code>id</code> marcando una sección
+                        de un documento que será escrita en un lenguaje diferente.
+                    </p>
+                    <h3>Notas de uso</h3>
+                    <ul>
+                        <li>
+                            El elemento <code>div</code> debe ser usado unicamente cuando otro elemento (como <code>article</code> o <code>nav</code>)
+                            estan presentes, ya que el elemento <code>div</code> no tiene un sentido semantico.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" >
+                <header id="Form">Form</header>
+                <article>
+                    <p>
+                        El elemento <code>form</code> representa una sección del documento que contiene controles interactivos para 
+                        enviar información a un servidor web.
+                    </p>
+                    <p>
+                        Es posible las clases <code>:valid</code> o <code>:invalid</code> para estilizar el elemento <code>form</code> 
+                    </p>
+                    <h3>Atributos</h3>
+                    <ul>
+                        <li>
+                            <h3>Action</h3>
+                            <p>
+                                El URI del programa puede procesar la información del formulario, este valor puede ser sobreescrito por el 
+                                atributo <code>formaction</code> en el elemento <code>button</code> o <code>input</code>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Name</h3>
+                            <p>
+                                El nombre en el formulario. En HTML 4, es despreciado. Debe ser usado entre los documentos del formulario y no 
+                                en un valor <code>string</code> vacio.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" >
+                <header id="Header">Header</header>
+                <article>
+                    <p>
+                        El <code>header</code> presenta el contenido introductorio, tipicamente un grupo introductorio o 
+                        ayudas de navegación. Puede contener algunos elementos como un logo, una barra de busqueda, el nombre 
+                        del autor y otros más. 
+                    </p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
